@@ -87,10 +87,11 @@ jobs:
           echo "addpath('~/opt/share/openEMS/matlab')" >> ~/.octaverc
           echo "addpath('~/opt/share/CSXCAD/matlab')" >> ~/.octaverc
 
-      - uses: actions/upload-artifact@v4
-          with:
-            name: macos-openems
-            path: "~/opt/share/**/*
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-openems
+          path: ~/opt/share/**/*
 
       - name: Smoketest Octave execution
         run: |
