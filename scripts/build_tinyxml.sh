@@ -136,7 +136,7 @@ function build {
   local install_dir="$3"
 
   cd "$build_dir"
-  rm -rf "$build_dir/tinyxml"
+#  rm -rf "$build_dir/tinyxml"
   tar -xf "$download_dir/tinyxml-2.6.2.tar.gz"
 
   cd "$build_dir/tinyxml"
