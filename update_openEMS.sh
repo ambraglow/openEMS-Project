@@ -193,7 +193,6 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 echo "build successful, cleaning up tmp dir ..."
-rm -rf $tmpdir
 cd $basedir
 
 #####  additional packages ####
